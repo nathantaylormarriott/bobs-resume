@@ -11,6 +11,7 @@ import { type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { SmoothScroll } from "@/components/SmoothScroll";
+import { PasswordGate, usePasswordGate } from "@/components/PasswordGate";
 
 function NotFoundComponent() {
   return (
@@ -118,15 +119,30 @@ function RootShell({ children }: { children: ReactNode }) {
   );
 }
 
+function GatedContent() {
+  const { unlocked, ready } = usePasswordGate();
+
+  if (!ready) return null;
+
+  if (unlocked) {
+    return (
+      <SmoothScroll>
+        <Outlet />
+      </SmoothScroll>
+    );
+  }
+
+  return <Outlet />;
+}
+
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
 
   return (
     <QueryClientProvider client={queryClient}>
-      <SmoothScroll>
-        {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
-        <Outlet />
-      </SmoothScroll>
+      <PasswordGate>
+        <GatedContent />
+      </PasswordGate>
     </QueryClientProvider>
   );
 }
