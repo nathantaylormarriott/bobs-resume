@@ -4,6 +4,7 @@ import { TiltCard } from "@/components/TiltCard";
 import { Reveal } from "@/components/Reveal";
 
 const FORM_NAME = "contact";
+const FORM_ENDPOINT = "/forms.html";
 
 function encodeFormData(data: Record<string, string>) {
   return Object.keys(data)
@@ -28,7 +29,7 @@ export function ContactForm() {
     setStatus("submitting");
 
     try {
-      const response = await fetch("/", {
+      const response = await fetch(FORM_ENDPOINT, {
         method: "POST",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         body: encodeFormData({ "form-name": FORM_NAME, ...payload }),
@@ -71,6 +72,7 @@ export function ContactForm() {
           <form
             name={FORM_NAME}
             method="POST"
+            action={FORM_ENDPOINT}
             data-netlify="true"
             data-netlify-honeypot="bot-field"
             onSubmit={handleSubmit}

@@ -188,33 +188,10 @@ function Resume() {
             </TiltCard>
           </Reveal>
 
-          <Reveal delay={200} className="md:col-span-6 lg:col-span-12">
-            <TiltCard className="h-full p-7 md:p-8" intensity={1}>
-              <Label>Education</Label>
-              <div className="mt-4 grid gap-5 md:grid-cols-2">
-                {education.map((e) => (
-                  <div key={e.degree} className="flex items-start gap-3">
-                    <div className="shrink-0 rounded-xl border border-border bg-secondary p-2.5 text-primary">
-                      <GraduationCap className="h-4 w-4" />
-                    </div>
-                    <div className="min-w-0">
-                      <div className="text-xs font-medium uppercase tracking-wider text-muted-foreground">{e.period}</div>
-                      <div className="mt-0.5 text-[15px] font-semibold text-ink">{e.degree}</div>
-                      <div className="text-sm text-muted-foreground">{e.school}</div>
-                      {"note" in e && e.note && (
-                        <div className="mt-1 text-sm leading-relaxed text-foreground/70">{e.note}</div>
-                      )}
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </TiltCard>
-          </Reveal>
-
           {experience.map((job, i) => (
             <Reveal
               key={`${job.company}-${job.role}`}
-              delay={260 + i * 80}
+              delay={200 + i * 80}
               className={i === 2 ? "md:col-span-6 lg:col-span-12" : "md:col-span-6 lg:col-span-6"}
             >
               <TiltCard className="h-full p-7 md:p-8" intensity={1}>
@@ -239,6 +216,29 @@ function Resume() {
               </TiltCard>
             </Reveal>
           ))}
+
+          <Reveal delay={440} className="md:col-span-6 lg:col-span-12">
+            <TiltCard className="h-full p-7 md:p-8" intensity={1}>
+              <Label>Education</Label>
+              <div className="mt-4 grid gap-5 md:grid-cols-2">
+                {education.map((e) => (
+                  <div key={e.degree} className="flex items-start gap-3">
+                    <div className="shrink-0 rounded-xl border border-border bg-secondary p-2.5 text-primary">
+                      <GraduationCap className="h-4 w-4" />
+                    </div>
+                    <div className="min-w-0">
+                      <div className="text-xs font-medium uppercase tracking-wider text-muted-foreground">{e.period}</div>
+                      <div className="mt-0.5 text-[15px] font-semibold text-ink">{e.degree}</div>
+                      <div className="text-sm text-muted-foreground">{e.school}</div>
+                      {"note" in e && e.note && (
+                        <div className="mt-1 text-sm leading-relaxed text-foreground/70">{e.note}</div>
+                      )}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </TiltCard>
+          </Reveal>
 
           <ContactForm />
         </div>
