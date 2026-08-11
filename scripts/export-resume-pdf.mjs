@@ -3,7 +3,7 @@ import { homedir } from "node:os";
 import { join } from "node:path";
 
 const RESUME_URL = process.env.RESUME_URL ?? "http://localhost:8081/";
-const OUTPUT_PATH = join(homedir(), "Downloads", "Sam-Shahi-Resume.pdf");
+const OUTPUT_PATH = join(homedir(), "Downloads", "Bobby-Rawlings-Resume.pdf");
 
 async function preparePageForPrint(page) {
   await page.evaluate(async () => {

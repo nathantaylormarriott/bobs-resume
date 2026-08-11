@@ -8,18 +8,18 @@ import { ShinyLink } from "@/components/ui/shiny-button";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Sam Shahi — Business Development Manager | Life Sciences" },
-      { name: "description", content: "Sam Shahi — Senior Business Development Manager based in Cardiff. 10+ years growing life-sciences, pharma and analytical-testing accounts across the UK & Ireland." },
-      { name: "keywords", content: "Sam Shahi, Business Development Manager, Life Sciences BDM, Cardiff, UK, Ireland, Pharmaceutical Sales, Key Account Manager" },
-      { property: "og:title", content: "Sam Shahi — Business Development Manager" },
-      { property: "og:description", content: "Senior BDM · Life Sciences · Key Accounts · Cardiff, UK." },
+      { title: "Bobby Rawlings — Logistics Coordinator | FMCG Logistics" },
+      { name: "description", content: "Bobby Rawlings — Logistics Coordinator based in Aylesbury. Extensive experience coordinating fast-paced logistics operations within FMCG manufacturing at Arla Foods." },
+      { name: "keywords", content: "Bobby Rawlings, Logistics Coordinator, FMCG Logistics, Aylesbury, SAP, Despatch, Warehouse, Arla Foods" },
+      { property: "og:title", content: "Bobby Rawlings — Logistics Coordinator" },
+      { property: "og:description", content: "Logistics Coordinator · FMCG Logistics · SAP · Aylesbury, UK." },
       { property: "og:type", content: "profile" },
       { property: "og:url", content: "/" },
       { property: "og:image", content: "/og-image.png" },
       { name: "twitter:card", content: "summary_large_image" },
       { name: "twitter:image", content: "/og-image.png" },
-      { name: "twitter:title", content: "Sam Shahi — Business Development Manager" },
-      { name: "twitter:description", content: "Senior BDM · Life Sciences · Key Accounts · Cardiff, UK." },
+      { name: "twitter:title", content: "Bobby Rawlings — Logistics Coordinator" },
+      { name: "twitter:description", content: "Logistics Coordinator · FMCG Logistics · SAP · Aylesbury, UK." },
     ],
     links: [{ rel: "canonical", href: "/" }],
     scripts: [
@@ -28,13 +28,13 @@ export const Route = createFileRoute("/")({
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Person",
-          name: "Sam Shahi",
-          jobTitle: "Senior Business Development Manager",
-          telephone: "+44 7442 005955",
-          email: "samir00524@gmail.com",
-          address: { "@type": "PostalAddress", addressLocality: "Cardiff", addressRegion: "Wales", addressCountry: "UK" },
-          alumniOf: ["De Montfort University"],
-          knowsAbout: ["Life Sciences", "Pharmaceutical Sales", "Key Account Management", "B2B Business Development"],
+          name: "Bobby Rawlings",
+          jobTitle: "Logistics Coordinator",
+          telephone: "+447711894120",
+          email: "bobbyrawlings@icloud.com",
+          address: { "@type": "PostalAddress", addressLocality: "Aylesbury", addressRegion: "Buckinghamshire", addressCountry: "UK" },
+          alumniOf: ["Middlesex University", "The Cottesloe School"],
+          knowsAbout: ["Site Planning", "FMCG Logistics", "SAP", "Despatch Operations", "Warehouse Management"],
         }),
       },
     ],
@@ -42,67 +42,85 @@ export const Route = createFileRoute("/")({
   component: Resume,
 });
 
-const PHONE = "+447442005955";
-const PHONE_DISPLAY = "+44 7442 005955";
-const EMAIL = "samir00524@gmail.com";
-const RESUME_PDF_PATH = "/Sam-Shahi-Resume.pdf";
-const RESUME_PDF_FILENAME = "Sam Shahi - 07442005955 - IBM MSc - 10+ Yrs Exp.pdf";
+const PHONE = "+447711894120";
+const PHONE_DISPLAY = "07711 894120";
+const EMAIL = "bobbyrawlings@icloud.com";
+const RESUME_PDF_PATH = "/Bobby-Rawlings-Resume.pdf";
+const RESUME_PDF_FILENAME = "Bobby Rawlings - 07711894120 - Logistics Coordinator - bobbyrawlings@icloud.com.pdf";
 
 const competencies = [
-  "New Business Development",
-  "Life Sciences & Regulated Markets",
-  "Commercial Negotiation (CDA / MSA)",
-  "Cross-Functional Collaboration",
-  "Service & Solution Selling",
-  "Key Account Growth",
-  "Proposal Design & Presentation",
-  "CRM Pipeline Management",
-  "Stakeholder Engagement",
-  "Target Setting & Forecasting",
+  "Site Planning & Despatch",
+  "FMCG Logistics Operations",
+  "SAP & Microsoft Excel",
+  "Transport Planning",
+  "Warehouse & Cold Store Operations",
+  "Team Leadership",
+  "Health & Safety Compliance",
+  "Food Safety & Traceability",
+  "Continuous Improvement",
+  "Operational Risk Management",
 ];
 
 const experience = [
   {
-    role: "Senior Business Development Manager",
-    company: "Taylor-Marriott",
-    period: "2023 – 2026",
-    sub: "Digital product design, build & growth for life-sciences and regulated industries",
+    role: "Site Planner",
+    company: "Arla Foods",
+    period: "November 2025 – Present",
+    sub: "High-volume FMCG manufacturing — daily despatch and logistics coordination",
     points: [
-      "Own new-business growth for bespoke digital products, client portals, and marketing systems sold into life-sciences, analytical testing, pharmaceutical, and related regulated organisations.",
-      "Closed 30+ new digital-solution contracts over 24 months, with a 60%+ proposal-to-close win rate against annual targets agreed with leadership.",
-      "Grew key-account revenue 30%+ YoY by diagnosing client bottlenecks, scoping tailored platforms with engineering, and presenting commercial proposals to MD/VP stakeholders.",
-      "Manage CDAs, MSAs, and pricing negotiations through to signature; keep CRM forecasts current and partner with delivery to protect go-live quality and retention.",
+      "Coordinate daily despatch operations within a high-volume FMCG manufacturing environment, ensuring products are released accurately and on schedule.",
+      "Plan and prioritise workloads, responding quickly to operational changes while maintaining service levels.",
+      "Use SAP to manage operational information, maintain transport plans and ensure accurate system data.",
+      "Monitor schedules throughout the day, identifying potential risks and implementing solutions to minimise disruption.",
+      "Work closely with Production, Warehouse, Logistics and Transport teams to ensure smooth operational flow.",
+      "Maintain accurate operational documentation and ensure full product traceability.",
+      "Analyse operational performance and identify opportunities to improve efficiency and reduce turnaround times.",
+      "Support continuous improvement initiatives by reviewing processes and recommending operational improvements.",
+      "Lead and support operational teams while maintaining high standards of Health & Safety, food safety and compliance.",
     ],
   },
   {
-    role: "Business Development Manager",
-    company: "Herbal Creations",
-    period: "2018 – 2021",
-    sub: "Manufacturer & global exporter of phytochemicals and herbal extracts (GMP / HACCP / ISO)",
+    role: "Bay Technician",
+    company: "Arla Foods",
+    period: "June 2022 – November 2025",
+    sub: "Team leadership, despatch accuracy and transport planning in a fast-paced FMCG environment",
     points: [
-      "Drove B2B development for a manufacturer of 800+ herbal extracts and phytochemicals, selling into nutraceutical, pharmaceutical, and cosmetic formulators across EU and US supply chains.",
-      "Grew assigned export revenue 34% over three years and opened 22 new distributor and formulator accounts, leveraging USA and Europe warehouse capability for reliable fulfilment.",
-      "Won multi-SKU supply agreements by aligning customised extract specs, COAs, and regulatory documentation (GMP, HACCP, ISO, Halal, Kosher) to buyer quality and compliance needs.",
-      "Partnered with QC and production on rapid project quotes; negotiated commercial terms and monitored satisfaction to expand share of wallet with priority accounts.",
+      "Led by example in a fast-paced environment, managed a team of operatives professionally whilst fostering a positive and motivated team culture.",
+      "Planned ahead of schedule to ensure strict time slots were met and ensured goods were despatched accurately and on time, being proactive in preventing any delays.",
+      "Balanced multiple and conflicting workloads, demonstrating the ability to prioritise tasks efficiently and adapt to make robust decisions under pressure.",
+      "Experienced in utilising the SAP system, maintaining records in line with the Transport Plan and ensuring all information was accurate and up to date.",
+      "Continuously promoted service improvement, analysed team performance and revised strategies in order to achieve low Bay Turnover.",
+      "Verified vehicle documentation, trailer numbers, and load accuracy to confirm that all products met required standards and temperatures.",
+      "Ensured all documentation and records were completed precisely to enable traceability and issue resolution.",
+      "Enforced a high standard of Health & Safety awareness across all operations and logged safety observations through the LIA system.",
     ],
   },
   {
-    role: "Sales Development Representative",
-    company: "Global Tech Users",
-    period: "2014 – 2018",
-    sub: "B2B contact databases, technographics & data enrichment services",
+    role: "Despatch Operative",
+    company: "Arla Foods",
+    period: "June 2019 – June 2022",
+    sub: "Cold store operations, warehouse technology and food hygiene compliance",
     points: [
-      "Prospected and qualified buyers of targeted B2B datasets, installed-tech intelligence, and data-enrichment services across marketing, sales ops, and IT decision-makers in 135+ country markets.",
-      "Generated 180+ sales-accepted leads per quarter on average and contributed £920K+ in influenced pipeline annually through structured outreach and CRM-disciplined follow-up.",
-      "Exceeded SDR quota by 118% in the final two years by refining ICP targeting (C-level, healthcare, and international B2B segments) and improving meeting-to-opportunity conversion.",
-      "Handed off high-intent opportunities with clear discovery notes, enabling AEs to close data-subscription and enrichment deals faster and with fewer lost cycles.",
+      "Completed all cold store operations, including order picking, physical inventory, loading and housekeeping duties.",
+      "Monitored advanced warehouse technology such as Automated Guided Vehicles to achieve daily targets efficiently.",
+      "Maintained strict adherence to Food Hygiene and Health & Safety standards.",
+      "Reported faults promptly, and performed basic maintenance and fault diagnosis to prevent downtime.",
     ],
   },
 ];
 
 const education = [
-  { degree: "MSc International Business Management", school: "De Montfort University, Leicester", period: "2021 – 2022" },
-  { degree: "BBM International Business Management", school: "India", period: "2014 – 2017" },
+  {
+    degree: "BA (Hons) Film",
+    school: "Middlesex University",
+    period: "September 2016 – June 2018",
+    note: "Completed two years of a Film degree combining practical filmmaking with analytical and written study, developing strong communication and expression.",
+  },
+  {
+    degree: "A Levels: Film Studies, English Literature, Art and Creative Writing",
+    school: "The Cottesloe School",
+    period: "September 2014 – June 2016",
+  },
 ];
 
 function Resume() {
@@ -114,25 +132,32 @@ function Resume() {
             <TiltCard className="h-full p-8 md:p-10">
               <Label>Profile</Label>
               <h1 className="mt-3 text-4xl font-semibold tracking-tight text-ink md:text-5xl lg:text-6xl">
-                Sam Shahi
+                Bobby Rawlings
               </h1>
               <p className="mt-3 text-lg font-medium text-primary md:text-xl">
-                Senior Business Development Manager
+                Logistics Coordinator
               </p>
               <p className="mt-1 text-sm text-muted-foreground">
-                Life Sciences · Key Accounts · UK &amp; Ireland
+                FMCG Logistics · SAP · Despatch &amp; Warehouse Operations
               </p>
               <p className="mt-6 max-w-2xl text-[15px] leading-relaxed text-foreground/80">
-                Results-driven BDM progressing from SDR to Senior BDM, with a track record selling digital
-                solutions into life-sciences and regulated industries, and earlier B2B growth for a
-                GMP-certified phytochemical and herbal-extract manufacturer.
+                Site Planner with extensive experience coordinating fast-paced logistics operations within
+                a leading FMCG manufacturing environment. Experienced in planning workloads, managing
+                changing operational priorities and ensuring the timely movement of products through
+                effective coordination with transport, warehouse and production teams.
+              </p>
+              <p className="mt-4 max-w-2xl text-[15px] leading-relaxed text-foreground/80">
+                Confident using SAP, Microsoft Excel and Microsoft Teams to manage operational data,
+                maintain accurate records and support informed decision-making. Known for remaining calm
+                under pressure, identifying risks early and adapting plans to meet service requirements
+                while maintaining high standards of accuracy and compliance.
               </p>
               <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-muted-foreground">
-                <span className="inline-flex items-center gap-1.5"><MapPin className="h-4 w-4 text-primary" /> Cardiff, Wales</span>
+                <span className="inline-flex items-center gap-1.5"><MapPin className="h-4 w-4 text-primary" /> Aylesbury</span>
                 <span className="hidden h-1 w-1 rounded-full bg-border sm:inline-block" />
                 <span className="inline-flex items-center gap-1.5"><Laptop className="h-4 w-4 text-primary" /> Hybrid</span>
                 <span className="hidden h-1 w-1 rounded-full bg-border sm:inline-block" />
-                <span className="inline-flex items-center gap-1.5"><Plane className="h-4 w-4 text-primary" /> Open to international travel</span>
+                <span className="inline-flex items-center gap-1.5"><Plane className="h-4 w-4 text-primary" /> Open to national travel</span>
               </div>
             </TiltCard>
           </Reveal>
@@ -176,6 +201,9 @@ function Resume() {
                       <div className="text-xs font-medium uppercase tracking-wider text-muted-foreground">{e.period}</div>
                       <div className="mt-0.5 text-[15px] font-semibold text-ink">{e.degree}</div>
                       <div className="text-sm text-muted-foreground">{e.school}</div>
+                      {"note" in e && e.note && (
+                        <div className="mt-1 text-sm leading-relaxed text-foreground/70">{e.note}</div>
+                      )}
                     </div>
                   </div>
                 ))}
@@ -185,7 +213,7 @@ function Resume() {
 
           {experience.map((job, i) => (
             <Reveal
-              key={job.company}
+              key={`${job.company}-${job.role}`}
               delay={260 + i * 80}
               className={i === 2 ? "md:col-span-6 lg:col-span-12" : "md:col-span-6 lg:col-span-6"}
             >
