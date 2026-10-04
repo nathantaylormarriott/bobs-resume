@@ -11,7 +11,7 @@ import { Input } from "@/components/ui/input";
 import { cn } from "@/lib/utils";
 
 const STORAGE_KEY = "bobs-resume-unlocked";
-const PASSWORD = "hireme123";
+const PASSWORD = "hireme";
 
 type PasswordGateContextValue = {
   unlocked: boolean;

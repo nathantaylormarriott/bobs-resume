@@ -31,7 +31,7 @@ export const Route = createFileRoute("/")({
           name: "Bobby Rawlings",
           jobTitle: "Logistics Coordinator",
           telephone: "+447711894120",
-          email: "bobbyrawlings@icloud.com",
+          email: "hello@bobbyrawlings.com",
           address: { "@type": "PostalAddress", addressLocality: "Aylesbury", addressRegion: "Buckinghamshire", addressCountry: "UK" },
           alumniOf: ["Middlesex University", "The Cottesloe School"],
           knowsAbout: ["Site Planning", "FMCG Logistics", "SAP", "Despatch Operations", "Warehouse Management"],
@@ -44,9 +44,9 @@ export const Route = createFileRoute("/")({
 
 const PHONE = "+447711894120";
 const PHONE_DISPLAY = "07711 894120";
-const EMAIL = "bobbyrawlings@icloud.com";
+const EMAIL = "hello@bobbyrawlings.com";
 const RESUME_PDF_PATH = "/Bobby-Rawlings-Resume.pdf";
-const RESUME_PDF_FILENAME = "Bobby Rawlings - 07711894120 - Logistics Coordinator - bobbyrawlings@icloud.com.pdf";
+const RESUME_PDF_FILENAME = "Bobby Rawlings - 07711894120 - Logistics Coordinator - hello@bobbyrawlings.com.pdf";
 
 const competencies = [
   "Site Planning & Despatch",
