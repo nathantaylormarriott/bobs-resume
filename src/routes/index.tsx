@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { Phone, Mail, MessageCircle, MapPin, Briefcase, GraduationCap, Plane, Laptop, ArrowUpRight, Download } from "lucide-react";
+import { Phone, Mail, MessageCircle, MapPin, Briefcase, GraduationCap, Car, Laptop, ArrowUpRight, Download } from "lucide-react";
 import { TiltCard } from "@/components/TiltCard";
 import { Reveal } from "@/components/Reveal";
 import { ContactForm } from "@/components/ContactForm";
@@ -157,7 +157,7 @@ function Resume() {
                 <span className="hidden h-1 w-1 rounded-full bg-border sm:inline-block" />
                 <span className="inline-flex items-center gap-1.5"><Laptop className="h-4 w-4 text-primary" /> Hybrid</span>
                 <span className="hidden h-1 w-1 rounded-full bg-border sm:inline-block" />
-                <span className="inline-flex items-center gap-1.5"><Plane className="h-4 w-4 text-primary" /> Open to national travel</span>
+                <span className="inline-flex items-center gap-1.5"><Car className="h-4 w-4 text-primary" /> Open to national travel</span>
               </div>
             </TiltCard>
           </Reveal>
