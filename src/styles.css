@@ -125,13 +125,6 @@
   will-change: transform;
 }
 
-html.gate-locked,
-html.gate-locked body {
-  overflow: hidden !important;
-  overscroll-behavior: none;
-  touch-action: none;
-}
-
 @media print {
   @page {
     size: A4 portrait;
