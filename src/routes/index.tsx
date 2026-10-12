@@ -4,24 +4,40 @@ import { TiltCard } from "@/components/TiltCard";
 import { Reveal } from "@/components/Reveal";
 import { ContactForm } from "@/components/ContactForm";
 import { ShinyLink } from "@/components/ui/shiny-button";
+import {
+  OG_DESCRIPTION,
+  OG_IMAGE_ALT,
+  OG_IMAGE_URL,
+  OG_TITLE,
+  SITE_DESCRIPTION,
+  SITE_TITLE,
+  SITE_URL,
+} from "@/lib/site-meta";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Bobby Rawlings — Logistics Coordinator | FMCG Logistics" },
-      { name: "description", content: "Bobby Rawlings — Logistics Coordinator based in Aylesbury. Extensive experience coordinating fast-paced logistics operations within FMCG manufacturing at Arla Foods." },
-      { name: "keywords", content: "Bobby Rawlings, Logistics Coordinator, FMCG Logistics, Aylesbury, SAP, Despatch, Warehouse, Arla Foods" },
-      { property: "og:title", content: "Bobby Rawlings — Logistics Coordinator" },
-      { property: "og:description", content: "Logistics Coordinator · FMCG Logistics · SAP · Aylesbury, UK." },
+      { title: SITE_TITLE },
+      { name: "description", content: SITE_DESCRIPTION },
+      { name: "keywords", content: "Bobby Rawlings, Logistics Coordinator, FMCG Logistics, Aylesbury, SAP, Despatch, Warehouse, Arla Foods, hello@bobbyrawlings.com" },
+      { property: "og:title", content: OG_TITLE },
+      { property: "og:description", content: OG_DESCRIPTION },
       { property: "og:type", content: "profile" },
-      { property: "og:url", content: "/" },
-      { property: "og:image", content: "/og-image.png" },
+      { property: "og:url", content: SITE_URL },
+      { property: "og:locale", content: "en_GB" },
+      { property: "og:image", content: OG_IMAGE_URL },
+      { property: "og:image:width", content: "1200" },
+      { property: "og:image:height", content: "630" },
+      { property: "og:image:alt", content: OG_IMAGE_ALT },
+      { property: "profile:first_name", content: "Bobby" },
+      { property: "profile:last_name", content: "Rawlings" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: "/og-image.png" },
-      { name: "twitter:title", content: "Bobby Rawlings — Logistics Coordinator" },
-      { name: "twitter:description", content: "Logistics Coordinator · FMCG Logistics · SAP · Aylesbury, UK." },
+      { name: "twitter:title", content: OG_TITLE },
+      { name: "twitter:description", content: OG_DESCRIPTION },
+      { name: "twitter:image", content: OG_IMAGE_URL },
+      { name: "twitter:image:alt", content: OG_IMAGE_ALT },
     ],
-    links: [{ rel: "canonical", href: "/" }],
+    links: [{ rel: "canonical", href: SITE_URL }],
     scripts: [
       {
         type: "application/ld+json",

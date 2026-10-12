@@ -11,6 +11,15 @@ import { type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { SmoothScroll } from "@/components/SmoothScroll";
+import {
+  OG_DESCRIPTION,
+  OG_IMAGE_ALT,
+  OG_IMAGE_URL,
+  OG_TITLE,
+  SITE_DESCRIPTION,
+  SITE_TITLE,
+  SITE_URL,
+} from "@/lib/site-meta";
 
 function NotFoundComponent() {
   return (
@@ -74,19 +83,25 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Bobby Rawlings — Logistics Coordinator | FMCG Logistics" },
-      { name: "description", content: "Logistics Coordinator based in Aylesbury — extensive experience coordinating fast-paced logistics operations within FMCG manufacturing at Arla Foods." },
+      { title: SITE_TITLE },
+      { name: "description", content: SITE_DESCRIPTION },
       { name: "author", content: "Bobby Rawlings" },
       { name: "theme-color", content: "#4575E6" },
       { property: "og:site_name", content: "Bobby Rawlings" },
+      { property: "og:title", content: OG_TITLE },
+      { property: "og:description", content: OG_DESCRIPTION },
       { property: "og:type", content: "website" },
-      { property: "og:image", content: "/og-image.png" },
+      { property: "og:url", content: SITE_URL },
+      { property: "og:locale", content: "en_GB" },
+      { property: "og:image", content: OG_IMAGE_URL },
       { property: "og:image:width", content: "1200" },
       { property: "og:image:height", content: "630" },
-      { property: "og:image:alt", content: "Bobby Rawlings — Logistics Coordinator — 07711 894120" },
+      { property: "og:image:alt", content: OG_IMAGE_ALT },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:image", content: "/og-image.png" },
-      { name: "twitter:image:alt", content: "Bobby Rawlings — Logistics Coordinator — 07711 894120" },
+      { name: "twitter:title", content: OG_TITLE },
+      { name: "twitter:description", content: OG_DESCRIPTION },
+      { name: "twitter:image", content: OG_IMAGE_URL },
+      { name: "twitter:image:alt", content: OG_IMAGE_ALT },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
